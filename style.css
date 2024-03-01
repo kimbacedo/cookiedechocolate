@@ -1,0 +1,46 @@
+section h2,
+section h1 {
+  margin-bottom: 40px;
+}
+.passos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer {
+  background-color: #4f4337;
+}
+#username {
+  font-weight: 600;
+}
+.menuPrincipal span {
+  color: #4f4337;
+  font-weight: 600;
+}
+.menuPrincipal span:hover {
+  color: #4f4337;
+}
+.menuPrincipal a {
+  color: #4f4337;
+}
+.menuPrincipal a:hover {
+  color: #806d59;
+}
+.titulos {
+  position: relative;
+}
+.titulos::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 5px;
+  background-color: #4f4337;
+  position: absolute;
+  left: -25px;
+}
+
+@media (max-width: 600px) {
+  .titulos::before {
+    display: none;
+  }
+}
