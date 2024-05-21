@@ -1,5 +1,5 @@
-function initAnimaScroll() {
-  const sections = document.querySelectorAll(".js-scroll");
+export default function initAnimaScroll() {
+  const sections = document.querySelectorAll("[data-anime='scroll']");
 
   if (sections.length) {
     const windowPorcentagem = window.innerHeight * 0.85;
@@ -19,4 +19,3 @@ function initAnimaScroll() {
     window.addEventListener("scroll", animaScroll);
   }
 }
-initAnimaScroll();
